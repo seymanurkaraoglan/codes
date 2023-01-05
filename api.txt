@@ -1,0 +1,30 @@
+api key,apiyi kullanmamız için gereken anahtardır. 
+Geliştirdiğimiz uygulamamızdan, kullanacağımız sisteme api key ile erişim sağlarız.
+Bunlar, geliştirdiğimiz uygulamadan kaç kere api tarafına erişilmiş veya istek atılmış, 
+api erişim limiti varsa limit, aşılmış mı? Google veya her hangi api hizmeti eğer api key kullanıyorsa
+ bu api key sayesinde erişim limitlemesi gibi kontroller sağlayabilir. 
+
+
+The API key has been created
+API Key	hw7c1g2a1747355e9pk1imvk70a8b969lbt24dyi5f17c362ta8sscmg745ea1fa
+Secret	0ed9fd7b3cbe488923beb330efe4212dee4354e8aa10b657
+Note: this is only needed for the legacy API v1 endpoints and deprecated in API v2. More information here.
+
+burada sadece threat level almaya çalışıyordum
+
+json_file = r.json()
+data = json.dumps(json_file)
+for item in data:
+    if(item['threat_level'] != 0):
+        print(f"\tthreat_level:{item['threat_level']}")      
+
+"threat_level": 0,
+                    "threat_level_readable": "no specific threat",
+
+"threat_level": 1,
+            "threat_level_human": "suspicious",
+
+"threat_level": 2,
+            "threat_level_human": "malicious",
+malware siteler harici exe dışında neler var?
+
